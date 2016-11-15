@@ -20,6 +20,7 @@ body, h1, div, label{
   font-family:sans-serif;
   color:white;
   transition: all 250ms ease;
+  font-size: 13px;
 }
 
 #settings{
@@ -37,6 +38,11 @@ body, h1, div, label{
 
 #settings-title{
   margin-bottom: 20px;
+  font-size: 30px;
+}
+
+label{
+  font-size: 14px;
 }
 
 input{
@@ -45,6 +51,7 @@ input{
   background: none;
   color:white;
   border:none;
+  font-size: 14px;
   border-bottom: 1px solid rgba(255,255,255,0.5);
 }
 
@@ -69,6 +76,7 @@ button{
   color: white;
   text-align: center;
   padding: 3px 7px;
+  width:100px;
   border: 1px solid rgba(255,255,255,0.5);
   transition: all 250ms ease;
 }
@@ -83,11 +91,10 @@ button:active{
 
 #explanation-text{
   margin-top:10px;
-  font-size:13px;
 }
 
 .invisible{
   visibility:0;
   opacity:0;
-  height:0;
+  font-size:1px;
 }
