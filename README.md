@@ -29,17 +29,19 @@ This project will be implemented with the following technologies:
 - `HTML5 Canvas` for DOM manipulation and rendering,
 - Webpack to bundle and serve up the various scripts.
 
-In addition to the webpack entry file, there will be three scripts involved in this project:
+In addition to the webpack entry file, there will be four scripts involved in this project:
 
-`iterate.js`: this script will calculate the values/color of each pixel
+`graph.js`: this script will handle the logic for drawing the Mandlebrot set.
 
-`graph.js`: this script will handle the logic for drawing the graph by calling iterate.
+`complex.js`: this script will handle complex numbers.
 
-`interface.js`: this script will handle user inputs and calls graph to render.
+`util.js`: this script will handle screen recalculation.
+
+`mandlebrot.js`: this script will handle user inputs and calls graph to render.
 
 ### Implementation Timeline
 
-**Day 1**: Setup all necessary Node modules, including getting webpack up and running and `Easel.js` installed.  Create `webpack.config.js` as well as `package.json`.  Write a basic entry file and the bare bones of all 3 scripts outlined above. Goals for the day:
+**Day 1**: Setup all necessary Node modules, including getting webpack up and running and `Easel.js` installed.  Create `webpack.config.js`.  Write a basic entry file and the bare bones of all 3 scripts outlined above. Goals for the day:
 
 - Get a green bundle with `webpack`
 - Set up `graph.js` to render individual pixels
@@ -48,7 +50,7 @@ In addition to the webpack entry file, there will be three scripts involved in t
 
 - Render Mandlebrot set
 
-**Day 3**: Work on `interface.js` to create the settings box to allow users to change z inputs.  Goals for the day:
+**Day 3**: Work on `mandlebrot.js` to create the settings box to allow users to change z inputs.  Goals for the day:
 
 - create settings box
 - inputs change graph render
