@@ -4,7 +4,7 @@
 
 The core formula being investigated is is z_n+1 = z_n^2 + c where z and c are complex numbers.
 
-To generate a Julia set, a fixed c is chosen, and for all values z in the complex number plane, we run z through the formula and see if the values escape the set and diverge to infinite. We color code the speed at which the values diverge, thus we have a 3D graph displayed on a 2D plane. To generate the Mandlebrot set, we instead fix z to be 0 and we take all values of c from the complex plane and see if the values escape the set.
+To generate a Julia set, a fixed c is chosen, and for all values z in the complex number plane, the series is calculated to see whether the values escape the set and diverge to infinite. The graph is color coded according to the speed at which the values diverge, thus resulting in a 3D graph displayed on a 2D plane. To generate the Mandlebrot set, z is instead fixed to be 0 and values of c from the complex plane are tested for divergence.
 
 This project aims to create a visualization tool to explore other initial z values for the Mandlebrot set, thus producing different slices of the 5 dimensional graph.
 
@@ -32,6 +32,8 @@ This project will be implemented with the following technologies:
 In addition to the webpack entry file, there will be four scripts involved in this project:
 
 `graph.js`: this script will handle the logic for drawing the Mandlebrot set.
+
+`rectangle.js`: this script will handle drawing zoom rectangles.
 
 `complex.js`: this script will handle complex numbers.
 

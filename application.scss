@@ -14,8 +14,80 @@
  *= require_self
  */
 
-
-body{
+body, h1, div, label{
   margin:0;
   padding:0;
+  font-family:sans-serif;
+  color:white;
+  transition: all 250ms ease;
+}
+
+#settings{
+  position:fixed;
+  background: rgba(0,0,0,0.9);
+  padding: 20px;
+  margin:40px;
+  width: 340px;
+  border-radius: 10px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+}
+
+#settings-title{
+  margin-bottom: 20px;
+}
+
+input{
+  width:40px;
+  text-align: center;
+  background: none;
+  color:white;
+  border:none;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+#recommended-values{
+  margin-top: 5px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+}
+
+input:focus {
+    outline:none;
+}
+
+#buttons-box{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+button{
+  background:none;
+  color: white;
+  text-align: center;
+  padding: 3px 7px;
+  border: 1px solid rgba(255,255,255,0.5);
+  transition: all 250ms ease;
+}
+
+button:hover{
+  background-color: rgba(255,255,255,0.2);
+}
+
+button:active{
+  background-color: rgba(255,255,255,0.4);
+}
+
+#explanation-text{
+  margin-top:10px;
+  font-size:13px;
+}
+
+.invisible{
+  visibility:0;
+  opacity:0;
+  height:0;
 }
