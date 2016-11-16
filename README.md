@@ -39,7 +39,9 @@ This project will be implemented with the following technologies:
 
 In addition to the webpack entry file, there will be four scripts involved in this project:
 
-`graph.js`: this script will handle the logic for drawing the Mandlebrot set.
+`graph.js`: this script will handle the logic for drawing the Mandlebrot sets.
+
+`Jgraph.js`: this script will handle the logic for drawing the Julia sets.
 
 `rectangle.js`: this script will handle drawing zoom rectangles.
 

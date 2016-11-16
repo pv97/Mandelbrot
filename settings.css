@@ -1,34 +1,10 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
 
-body, h1, div, label{
-  margin:0;
-  padding:0;
-  font-family:sans-serif;
-  color:white;
-  transition: all 250ms ease;
-  font-size: 13px;
-}
-
-#settings{
+#mandlebrot-settings, #julia-settings{
   position:fixed;
   background: rgba(0,0,0,0.9);
-  padding: 20px;
-  margin:40px;
-  width: 340px;
+  padding: 10px;
+  margin:10px;
+  width: 280px;
   border-radius: 10px;
   display:flex;
   flex-direction: column;
@@ -36,13 +12,18 @@ body, h1, div, label{
   z-index: 100;
 }
 
-#settings-title{
+#julia-settings{
+  right:0;
+}
+
+.settings-title{
   margin-bottom: 5px;
   font-size: 30px;
 }
 
 #instructions{
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  text-align: center;
   color: rgba(255,255,255,0.5);
 }
 
@@ -51,7 +32,7 @@ label{
 }
 
 input{
-  width:40px;
+  width:62px;
   text-align: center;
   background: none;
   color:white;
@@ -60,7 +41,7 @@ input{
   border-bottom: 1px solid rgba(255,255,255,0.5);
 }
 
-#recommended-values{
+.recommended-values{
   margin-top: 5px;
   font-size: 10px;
   color: rgba(255,255,255,0.5);
@@ -71,7 +52,7 @@ input:focus {
 }
 
 #color-selector{
-  margin-top: 20px;
+  margin-top: 10px;
   background: none;
   color: white;
 }
@@ -81,7 +62,7 @@ input:focus {
 }
 
 #precision-selector{
-  margin-top: 20px;
+  margin-top: 10px;
   background: none;
   color: white;
 }
@@ -95,8 +76,16 @@ option{
   color:white;
 }
 
-#buttons-box{
-  margin-top: 20px;
+#ratio-checkbox{
+  width:10px;
+  height:10px;
+  width:auto;
+  vertical-align: bottom;
+  margin-top: 15px;
+}
+
+.buttons-box{
+  margin-top: 10px;
   display: flex;
   justify-content: space-around;
 }
@@ -121,10 +110,4 @@ button:active{
 
 #explanation-text{
   margin-top:10px;
-}
-
-.invisible{
-  visibility:0;
-  opacity:0;
-  font-size:1px;
 }
