@@ -65,6 +65,17 @@ input:focus {
     outline:none;
 }
 
+#color-selector{
+  margin-top: 20px;
+  background: none;
+  color: white;
+}
+
+option{
+  background:black;
+  color:white;
+}
+
 #buttons-box{
   margin-top: 20px;
   display: flex;
