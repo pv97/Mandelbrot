@@ -1,5 +1,9 @@
 ## Mandlebrot sets
 
+[Link][link]
+
+[link]: https://pv97.github.io/Mandlebrot/
+
 ### Background
 
 The core series being investigated is is z_n+1 = z_n^2 + c where z and c are complex numbers.
