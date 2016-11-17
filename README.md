@@ -23,6 +23,16 @@ the Julia sets following the series <br/> z<sub>n+1</sub> = z<sub>n</sub><sup>2<
 To truly appeciate the duality of these two sets, this tool is created to explore the various Mandelbrot and Julia sets for different
 initial z and c values, allowing, albeit gradual, exploration of the 5D fractal surface of the divergence of this beautiful series.
 
+### Instructions
+
+Click and drag to draw a rectangle that you wish to zoom into. Click on either graph to change the input for the other graph. Change settings in the settings box as desired. Look up [Mandelbrot set][mandel] and [Julia sets][julia]!
+
+[mandel]: https://en.wikipedia.org/wiki/Mandelbrot_set
+[julia]: https://en.wikipedia.org/wiki/Julia_set
+
+### Technologies Used
+
+Vanilla JavaScript with canvas, webpack to inject JavaScript into base HTML file.
 
 ### Features
 
@@ -49,3 +59,13 @@ A few color schemes has been added to the application. These color schemes are c
 ####Changing Rendering Precision
 
 Choosing different levels of precision tells the renderer to skip the calculation of n number of pixels. In this case, we skip none for 100%, every other pixel for 50% and 2 pixels for every calculated pixels for 33%.
+
+###Future Direction
+
+####Saving
+
+Allow users to save pictures to desktop.
+
+####Custom color schemes
+
+Implement a REPL that will allow users to create their own color schemes.
