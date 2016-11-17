@@ -22,6 +22,7 @@ the Julia sets following the series <br/> z<sub>n+1</sub> = z<sub>n</sub><sup>2<
 
 To truly appeciate the duality of these two sets, this tool is created to explore the various Mandelbrot and Julia sets for different
 initial z and c values, allowing, albeit gradual, exploration of the 5D fractal surface of the divergence of this beautiful series.
+
 ### Functionality & MVP  
 
 With this Julia/Mandelbrot set generator, users will be able to:
