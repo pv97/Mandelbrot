@@ -56,10 +56,6 @@ If the distance between the two vertexes from zooming is too small, ie: 5 pixels
 
 A few color schemes has been added to the application. These color schemes are callbacks given to the render function so different rgb values can be calculated from giving different functions. These functions need to be continuous and within 0-255, thus the color schemes were constructed mainly from using trigonometric functions.
 
-####Changing Rendering Precision
-
-Choosing different levels of precision tells the renderer to skip the calculation of n number of pixels. In this case, we skip none for 100%, every other pixel for 50% and 2 pixels for every calculated pixels for 33%.
-
 ###Future Direction
 
 ####Saving
